@@ -1,10 +1,9 @@
 ---
 - name: Creating empty file using Ansible playbook
   hosts: all
-  #user: root
   #become: yes
   tasks:
   - name: Ansible create file
     file:
-      path: "~/test_ansible_file"
+      path: "/opt/test_ansible_file"
       state: touch
